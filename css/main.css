@@ -73,7 +73,6 @@ section {
   border-left: none;
   border-right: none;
   padding: 1rem;
-  padding-top: 1.5rem;
   margin: 1rem;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
@@ -106,6 +105,7 @@ h5 {
   font-size: 1rem;
   margin-top: 1rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .divdiv {
@@ -133,10 +133,6 @@ footer {
   margin-bottom: 0;
 }
 
-.action {
-  margin-bottom: 1rem;
-}
-
 @media only screen and (min-width: 38em) {
 
   .divbanner {
@@ -144,16 +140,17 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-
   }
 
   h1 {
     margin-top: 0;
+    text-align: left;
   }
 
   .navnav {
     border: none;
     justify-content: space-around;
+    font-size: 1.1rem;
   }
 
   ul {
@@ -169,16 +166,15 @@ footer {
     margin-bottom: 1rem;
   }
 
-
-    main {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 35rem;
-      gap: 1rem;
-      grid-template-areas:
-        "header  header  header"
-        "col1    col2    col3"
-    }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 35rem;
+    gap: 1rem;
+    grid-template-areas:
+      "header  header  header"
+      "col1    col2    col3";
+  }
 
   section {
     grid-area: header;
@@ -190,50 +186,40 @@ footer {
     padding-bottom: 1rem;
   }
 
-  .navnav {
-    font-size: 1.1rem;
+  .divdiv {
+    margin: 0;
   }
 
- .divdiv {
-   margin-top: 1rem;
-   margin: 0;
- }
+  .logo {
+    margin: 0;
+    margin-bottom: 1rem;
+    padding-left: .5rem;
+    padding-top: .5rem;
+  }
 
- .logo {
-   margin: 0;
-   margin-bottom: 1rem;
-   padding-left: .5rem;
-   padding-top: .5rem;
- }
+  h2 {
+    text-align: left;
+  }
 
- h1 {
-   text-align: left;
- }
+  body {
+    margin: 1rem;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+  }
 
- h2 {
-   text-align: left;
- }
+  h4 {
+    margin-top: 1.5rem;
+  }
 
-body {
-  margin: 1rem;
-  margin-bottom: 1rem;
-  margin-top: .5rem;
-}
+  .action {
+    display: inline-block;
+    text-align: left;
+    margin-top: 0;
+  }
 
-h4 {
-  margin-top: 1.5rem;
-}
-.action {
-  display: inline-block;
-  text-align: left;
-  margin-top: 0;
-}
+  footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 
-footer {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-}
-}
 }
